@@ -1,0 +1,35 @@
+body {
+  background: #000;
+  font-family: 'Courier New', monospace;
+}
+
+.neon {
+  color: #fff;
+  text-shadow:
+    0 0 5px #00e600,
+    0 0 10px #00e600,
+    0 0 15px #00e600,
+    0 0 20px #00e600,
+    0 0 25px #00e600,
+    0 0 30px #00e600,
+    0 0 35px #00e600;
+  animation: flicker 1.5s infinite;
+}
+
+@keyframes flicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 4px #00e600,
+      0 0 11px #00e600,
+      0 0 19px #00e600,
+      0 0 21px #00e600,
+      0 0 23px #00e600,
+      0 0 26px #00e600,
+      0 0 30px #00e600,
+      0 0 35px #00e600;
+  }
+  
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}

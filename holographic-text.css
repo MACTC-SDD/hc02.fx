@@ -1,0 +1,27 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.holographic {
+    font-size: 5em;
+    background: -webkit-linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 
+        0 0 30px #ff0000, 
+        0 0 40px #ff0000;
+}
+
+.holographic:hover {
+    text-shadow:  
+        0 0 30px #00ff00, 
+        0 0 40px #00ff00;
+}
