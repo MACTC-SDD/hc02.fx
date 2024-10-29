@@ -1,0 +1,53 @@
+/* CSS for creating a popsicle effect */
+.popsicle {
+    width: 120px;
+    height: 250px;
+    background: linear-gradient(to bottom, #ff6b6b, #ff9e9e);
+    border-radius: 60px 60px 20px 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.stick {
+    width: 30px;
+    height: 100px;
+    background: #f5d19a;
+    border-radius: 15px;
+    position: absolute;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Adding a bite mark */
+.bite {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Adding a shiny effect */
+.shine {
+    width: 80px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-20deg);
+    pointer-events: none;
+}
+
+/* Applying a hover effect */
+.popsicle:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease-in-out;
+}
